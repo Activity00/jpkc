@@ -1,0 +1,56 @@
+/*css初始化*/
+html,body.div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,span,textarea{margin: 0;padding: 0;}
+
+body{font: 12px/150% "宋体",arial;color: #3c3c3c;
+       }
+h1,h2,h3,h4,h5,h6{font-size: 100%}  /*所有h标题和body字体一样大*/
+img{border: 0;display: block;}   /*清出图片底部空隙*/
+ul,ol{list-style: none}        /*吧列表小点去掉*/
+
+a{text-decoration: none;color: #fff}
+a:hover{text-decoration: underline;}
+.clearfix:after{content: "";
+               display: block;
+                height: 0;
+                visibility: hidden;
+                clear: both;}
+.clearfix{zoom:1;}   /*照顾ie6*/
+
+
+
+.header_1{
+	height:17px;
+	background: url(../images/top1.jpg) no-repeat;
+}
+.header_2{
+	height:127px;
+	margin-top: 5px;
+	background: url(../images/header.jpg) no-repeat;
+}
+
+.nav{
+	height: 35px;
+	width: 960px;
+	margin: 0 auto;
+	background:url(../images/nav.jpg) no-repeat;
+}
+
+.nav ul{
+	width:960px;
+	height: 33px;
+	float: left;
+	line-height: 33px;
+}
+.nav ul li{
+	float: left;
+	height: 33px;
+	padding: 0 24px;/*shagnxia 0 zuoyou 24*/
+    background:url(../images/li.jpg) no-repeat right center;
+}
+.nav ul li a{
+	font-size: 14px;
+	color: black;
+}
+.nav ul li a:hover{
+	color: #fff
+}

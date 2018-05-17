@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>长治医学院精品课程网</title>
+	<link rel="stylesheet" type="text/css" href="style/base.css">
+	<style type="text/css">
+	/*左边部分*/
+.left_menu{
+	height: 950px;
+}
+          /*右边部分*/
+.center{
+	width: 756px;
+	height: 578px;
+	/*background-color: white;*/
+    float: left;
+    padding:14px;
+    background: url("images/bg11.jpg");
+    background-repeat: repeat;
+}
+.titlebg{
+	width:755px;
+	height: 111px;
+	background:url("images/title_bg.jpg");
+}
+.center1{
+	 width: 755px;
+    height: 466px;
+    /*background: url("images/center1.jpg");*/
+    margin-top: 30px;
+
+}
+.center1 embed{
+
+	margin-left: 80px;
+	margin-top: 50px;
+}
+
+.iframe{
+	width: 755px;
+	height: 500px;
+}
+</style>
+    
+</head>
+<body>
+ <!-- **************************头部_start*************************** -->
+     <div class="header">
+	    <iframe  class="frame_head" src="head.html" scrolling="no" allowtransparency="yes" frameborder="no" marginheight="0" marginwidth="0"></iframe>
+	</div>
+<!-- **************************头部_end*************************** -->
+
+<!-- ***************************center_start******************************* -->
+	<!-- 左边menu -->
+	<div class="main">
+	<div class="left_menu">
+		<ul>
+		    <li><a href="#"><img src="images/psdh.jpg"></a></li>
+			<li><a href="#" onclick="changeItem(1)">| 信息与信息资源</a></li>
+			<li><a href="#" onclick="changeItem(2)">| 联机分析处理</a></li>
+			<li><a href="#" onclick="changeItem(3)">| 层次分析法</a></li>
+			<li><a href="#" onclick="changeItem(4)">| 回归分析法</a></li>
+			<li><a href="#" onclick="changeItem(5)">| 信息的分布规律</a></li>
+			<li><a href="#" onclick="changeItem(6)">| 波士顿矩阵法</a></li>
+		</ul>
+	</div>
+	<!--中心 -->
+	<div class="center">
+	    <div class="titlebg">
+	    	<img src="images/jxsp.gif"/>
+	        <span id="title_span" class="title_span"></span>
+	    
+	    <div id="center1" class="center1">
+	        
+	        <!--  <iframe id="iframe" class="iframe"  src=""
+	         scrolling="no">
+	         </iframe>    --> 
+
+	         <!--  <embed  id="video" src="video/信管001.wmv" width="550" height="450" autostart="false"></embed>  -->
+	          <video width="550" height="450" controls>
+	                 	          <source src="video/信管002.mp4" type="video/mp4"></source>
+	           </video>
+
+	    </div>
+	</div>
+
+</div>
+<!-- ***************************center_end******************************* -->
+
+	<!--******************************* 底部_start ***********************-->
+	<div class="footer">
+	    <iframe  class="frame_foot" src="foot.html" scrolling="no"    allowtransparency="yes" frameborder="no" marginheight="0" marginwidth="0">
+	    </iframe>
+	</div>
+	<!--******************************* 底部_end ***********************-->
+
+</body>
+
+<script type="text/javascript">
+	
+
+	function changeItem (argument) {
+			var title=document.getElementById('title_span');
+			var video=document.getElementById('center1');
+			var a=parseInt(argument);
+			switch(a){ 	 
+		   	case 1:
+		   	{
+		   		
+		   		title.innerHTML=">>信息与信息资源"; 
+                video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管002.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	case 2:
+		   	{
+		   		title.innerHTML=">>联机分析处理";
+		   		 video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管001.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	case 3:
+		   	{
+		   		title.innerHTML=">>层次分析法";
+		   		 video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管009.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	case 4:
+		   	{
+		   		title.innerHTML=">>回归分析法";
+		   		 video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管精品01.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	case 5:
+		   	{
+		   		title.innerHTML=">>信息的分布规律";
+		   		 video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管精品02.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	case 6:
+		   	{
+		   		title.innerHTML=">>波士顿矩阵法";
+		   		 video.innerHTML="<video width='550' height='450' autoplay='true' controls><source src='video/信管精品04.mp4' type='video/mp4'></source></video>";
+		   		break;
+		   	}
+		   	
+		 	   
+          }
+}
+ 
+
+</script>
+<script type="text/javascript">
+	 // var a=window.location.search;
+  //    var b=parseInt(a[1]); 
+	 // changeItem(1);	   
+</script>
+
+</html>
+
+
+
+  
